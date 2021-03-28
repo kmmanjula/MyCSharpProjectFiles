@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Javascript Arithmetic Ops</title>
+    <script type="text/javascript">
+        function sum(InputId1, InputId2) {
+            var n1 = Number(document.getElementById(InputId1).value);
+            var n2 = Number(document.getElementById(InputId2).value);
+            var add = n1 + n2;
+            var msg = n1 + " + " + n2 + " = " + add;
+            alert(msg);
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <tr><td>Enter a number:</td><td><input type="number" id="n1" /></td><td></td><td></td><td></td></tr>
+        <tr><td>Enter a number:</td><td><input type="number" id="n2" /></td><td></td><td></td><td></td></tr>
+        <tr><td><input type="button" value="+" onclick="sum('n1','n2')" /></td><td></td><td></td><td></td><td></td></tr>
+    </table>
+    <script type="text/javascript">
+        var emp = new Object();
+        emp.id = 101;
+        emp.ename = "Jitin";
+        emp.salary = 50000;
+        document.write(emp.id + " " + emp.ename + " " + emp.salary);
+    </script>
+</body>
+</html>
